@@ -1,2 +1,0 @@
-# myDemo
-javascript project
