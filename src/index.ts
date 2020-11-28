@@ -1,17 +1,19 @@
-//泛型约束
-/**
- * 将某个对象的name属性的每个单词的首字母大写，然后返回
- */
-interface hasNameProperty{
-    name:string
+//将两个数组进行混合，
+function mininArray<T,K>(arr1:T[],arr2:K[]):(T|K)[]{
+    if(arr1.length == 0&&arr2.length == 0){
+        throw new Error("不能为空")
+    }
+    let newarr:(T|K)[] = [];
+    let length = arr1.length>arr2.length ?arr1.length:arr2.length;
+    
+    for (let i = 0; i < length; i++) {
+        if(i<arr1.length){
+            newarr.push(arr1[i])
+        }
+        if(i<arr2.length){
+            newarr.push(arr2[i])
+        }
+    }
+    return newarr;
 }
-function nameToUpperCase<T extends hasNameProperty>(obj :T):T{
-    obj.name = obj.name.split(" ").map(s=>s[0].toUpperCase() + s.substr(1)).join(" ")
-    return obj;
-}
-const o = {
-    name : "yang jian",
-    age:20
-}
-const newO = nameToUpperCase(o);
-console.log(newO)
+console.log(mininArray([1,2],["e","b","c"]))
