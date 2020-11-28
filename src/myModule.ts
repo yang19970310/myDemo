@@ -1,8 +1,4 @@
-function sum(a:number,b:number){
+export function sum(a:number,b:number){
              return a+b
 }
- let name:string= "aa"
- export default  {
-     sum,
-     name
- }
+export let name:string= "aa"

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon --watch src -e ts --exec ts-node src/index.ts",
-    "bulid": "rd /s dist & tsc"
+    "bulid": "rd /s /q dist & tsc"
   },
   "repository": {
     "type": "git",

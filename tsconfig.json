@@ -1,7 +1,7 @@
 {
   "compilerOptions": {//编译选项
     "target":"es2016",//编译后生成的标准代码规范
-    "module": "es2015",//配置编译目标使用的模块化标准
+    "module": "Commonjs",//配置编译目标使用的模块化标准
     "lib":["es2016"], //编译的环境
     "outDir":"./dist",//编译后输出路径
     "strictNullChecks": true,//更加严格的空数值约束
@@ -9,7 +9,7 @@
     "noImplicitUseStrict":true,//去除严格模式
     "esModuleInterop":true,//启用es模块化交互非es模块化导出
     "noEmitOnError":true,//出错后不编译
-    "moduleResolution":"node"//设置解析模块的模式
+    //"moduleResolution":"node"//设置解析模块的模式
 
 
   },
