@@ -14,4 +14,6 @@ const o = {
     age:20
 }
 const newO = nameToUpperCase(o);
-console.log(newO)
+//console.log(newO)
+let arr= o.name.split(" ")
+console.log(arr.map(s=>s[0].toUpperCase() + s.substr(1)).join("-"))
