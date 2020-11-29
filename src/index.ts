@@ -1,5 +1,2 @@
-
-import {sum, name} from "./myModule"
-
-console.log(sum(4,5))
-console.log(name)
+//深入理解类和接口
+//面向对象
